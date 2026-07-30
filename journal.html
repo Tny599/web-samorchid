@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    
+    <meta name="description" content="SAMOrchid — Koleksi anggrek premium pilihan dengan kualitas terbaik. Temukan keindahan anggrek eksklusif untuk melengkapi ruang Anda.">
+    <meta name="keywords" content="anggrek, orchid, tanaman hias, bunga anggrek, SAMOrchid, premium orchid">
+    <meta name="author" content="SAMOrchid">
+    <meta name="robots" content="index, follow">
+
+    
+    <meta property="og:title" content="Jurnal Perawatan - SAMOrchid">
+    <meta property="og:description" content="SAMOrchid — Koleksi anggrek premium pilihan dengan kualitas terbaik.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+
+    <title>Jurnal Perawatan - SAMOrchid</title>
+
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="assets/css/samorchid.css">
+
+    
+    </head>
+<body>
+
+    
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+
+<header id="mainHeader">
+    
+    <button class="menu-btn" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    
+    <a href="journal.html"" class="logo-text" aria-label="SAMOrchid Home" style="text-decoration: none; font-size: 26px; font-weight: 800; letter-spacing: 1px;">
+        <span style="color: var(--green-natural);">SamO</span><span style="color: var(--pink-flower);">rchid</span>
+    </a>
+
+    
+    <div class="header-logo-right" style="display: flex; align-items: center;">
+        <img src="assets/images/logo-samorchid.png" alt="SAMOrchid Logo" style="height: 45px; width: auto; object-fit: contain;">
+    </div>
+</header>
+
+
+<nav class="side-menu" id="sideNav" aria-label="Main navigation">
+    
+    <ul style="margin-top: 100px;">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="catalog.html">Koleksi Anggrek</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        <li><a href="journal.html">Jurnal Perawatan</a></li>
+        <li><a href="news.html">Berita</a></li>
+        <li><a href="contact.html">Hubungi Kami</a></li>
+    </ul>
+
+    
+</nav>
+    
+    <main>
+        
+<style>
+    /* CSS tambahan ini bisa kamu pindahkan ke file .css utama kamu nanti */
+    .page-hero-modern {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        border-radius: 24px;
+        margin: 120px auto 5px auto;
+        max-width: 90%; /* Memberikan ruang di sisi kiri & kanan */
+        min-height: 380px; /* Tinggi proporsional */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero-overlay-modern {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        /* Gradient gelap ke terang untuk kontras teks yang sempurna */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,40,0,0.3));
+        z-index: 1;
+    }
+
+    .hero-content-modern {
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+        padding: 2rem;
+    }
+
+    .hero-content-modern h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 300;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero-content-modern h1 strong {
+        font-weight: 700;
+        color: #d4edda; /* Sentuhan warna hijau pastel yang lembut */
+    }
+
+    .hero-content-modern .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        color: #eaeaea;
+        font-weight: 400;
+    }
+
+    /* Efek Glassmorphism untuk Breadcrumb */
+    .breadcrumb-modern {
+        display: inline-flex;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 10px 24px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .breadcrumb-modern a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.3s ease;
+    }
+
+    .breadcrumb-modern a:hover {
+        opacity: 0.7;
+    }
+
+    .breadcrumb-separator {
+        margin: 0 12px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+</style>
+
+   
+<section class="page-hero-modern" style="background-image: url('assets/images/hero jurnal.png');">
+    
+    
+    <div class="hero-overlay-modern"></div>
+    
+    
+    <div class="hero-content-modern">
+        <h1><strong>Jurnal Perawatan</strong></h1>
+        
+        
+        <p class="hero-subtitle">Panduan dan tips terbaik untuk merawat anggrek kesayangan Anda.</p>
+        
+        
+        <nav class="breadcrumb-modern" aria-label="Breadcrumb">
+            <a href="journal.html"">Beranda</a>
+            <span class="breadcrumb-separator">&rsaquo;</span>
+            <span class="breadcrumb-current">Jurnal Perawatan</span>
+        </nav>
+    </div>
+</section>
+
+    
+    
+    
+    <section class="section-padding" style="background: #fff;">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Artikel Terbaru</span>
+                <h2>Tips & Panduan <strong>Merawat Anggrek</strong></h2>
+            </div>
+
+            <div class="journal-grid">
+
+                
+                <article class="journal-card scroll-reveal">
+                    <div class="card-image">
+                        <img src="assets/images/jurnal1.jpeg?w=400" alt="Cara Menanam Anggrek" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Perawatan Dasar</span>
+                        <h3>Wajib Tahu Nih, Bagaimana Cara Menanam dan Merawat Bunga Anggrek</h3>
+                        <p>Artikel edukasi dari website desa ini ngebahas tuntas soal dasar-dasar perawatan anggrek, mulai dari kapan waktu yang tepat mindahin ke pot baru sampai trik penyiraman yang benar biar akarnya nggak gampang busuk.</p>
+                        <a href="https://desaputat.gunungkidulkab.go.id/first/artikel/1911-WAJIB-TAHU-NIH--BAGAIMANA-CARA-MENANAM-DAN-MERAWAT-BUNGA-ANGGREK" target="_blank" rel="noopener noreferrer" class="read-more">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+
+                
+                <article class="journal-card scroll-reveal" style="--reveal-delay: 0.1s;">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800" alt="Tips Merawat Anggrek" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Tips & Trik</span>
+                        <h3>5 Tips Merawat Bunga Anggrek Agar Tumbuh dan Berbunga</h3>
+                        <p>Artikel dari blog Orchid Florist ini ngasih 5 tips jitu, kayak cara ngecek kelembapan media tanam (seperti lumut sphagnum atau kulit kayu) supaya nggak kebanyakan air, plus tips ngeracik pupuk cair yang aman.</p>
+                        <a href="https://www.orchid-florist.com/blog/5-tips-merawat-bunga-anggrek-agar-dapat-mekar-dengan-indah" target="_blank" rel="noopener noreferrer" class="read-more">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+
+                
+                <article class="journal-card scroll-reveal" style="--reveal-delay: 0.2s;">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=800" alt="Kesalahan Perawatan Anggrek" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Troubleshooting</span>
+                        <h3>5 Kesalahan Fatal yang Membuat Tanaman Anggrek Mudah Layu</h3>
+                        <p>Membahas kesalahan seperti terlalu banyak/sedikit menyiram air. Ada juga penjelasan mengapa sebaiknya tidak menyiram bagian tengah daun (bud) karena air yang menggenang bisa menyebabkan pembusukan.</p>
+                        <a href="https://www.kompas.com/homey/read/2025/07/28/212428376/5-kesalahan-fatal-yang-membuat-tanaman-anggrek-mudah-layu" target="_blank" rel="noopener noreferrer" class="read-more">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+
+                
+                <article class="journal-card scroll-reveal" style="--reveal-delay: 0.3s;">
+                    <div class="card-image">
+                        <img src="assets/images/catalog-seddling.jpg" alt="Hama dan Penyakit Anggrek" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Pengendalian Hama</span>
+                        <h3>5 Jenis Hama yang Sering Menyerang Tanaman Anggrek</h3>
+                        <p>Membahas cara menangani hama seperti kutu daun yang mengisap getah, menyebabkan daun menguning. Serta info jamur Botrytis yang dapat diobati dengan fungisida atau larutan baking soda dan air.</p>
+                        <a href="https://www.kompas.com/homey/read/2022/11/05/163300176/5-jenis-hama-yang-sering-menyerang-tanaman-anggrek" target="_blank" rel="noopener noreferrer" class="read-more">Baca Selengkapnya →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+    <section class="section-padding">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-header text-center">
+                <span class="section-tag">FAQ</span>
+                <h2>Pertanyaan <strong>Umum</strong></h2>
+            </div>
+
+            <div class="accordion">
+
+                
+                <div class="accordion-item scroll-reveal">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Berapa sering anggrek harus disiram?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            <p>
+                                Frekuensi penyiraman bergantung pada jenis media tanam, ukuran pot, dan kondisi iklim di sekitar tanaman Anda.
+                                Sebagai panduan umum, anggrek Phalaenopsis dapat disiram 2–3 kali per minggu saat cuaca panas, dan 1–2 kali per minggu saat musim hujan atau udara lembap.
+                                Pastikan media tanam mengering sebagian sebelum penyiraman berikutnya untuk menghindari busuk akar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="accordion-item scroll-reveal" style="--reveal-delay: 0.05s;">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Apakah anggrek membutuhkan sinar matahari langsung?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            <p>
+                                Sebagian besar anggrek hias — terutama Phalaenopsis — membutuhkan cahaya terang namun tidak langsung (<em>bright indirect light</em>).
+                                Hindari paparan sinar matahari langsung yang berlebihan karena dapat membakar daun dan merusak bunga.
+                                Tempat ideal adalah di dekat jendela yang menghadap timur atau di bawah naungan transparan yang menyaring cahaya secara merata.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="accordion-item scroll-reveal" style="--reveal-delay: 0.1s;">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Bagaimana cara merawat seedling anggrek?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            <p>
+                                Seedling anggrek memerlukan kelembapan udara yang tinggi (sekitar 70–80%), suhu stabil antara 22–28°C, dan cahaya lembut yang konsisten.
+                                Lakukan aklimatisasi secara bertahap saat memindahkan seedling dari <em>flask</em> ke komunitas pot.
+                                Gunakan media tanam halus seperti sphagnum moss dan berikan pupuk encer dengan konsentrasi rendah secara rutin untuk mendukung pertumbuhan akar dan daun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="accordion-item scroll-reveal" style="--reveal-delay: 0.15s;">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Kapan waktu yang tepat untuk mengganti media tanam?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            <p>
+                                Media tanam anggrek sebaiknya diganti setiap 1–2 tahun, atau lebih cepat jika media sudah mulai terurai, berbau asam, atau menjadi terlalu padat sehingga menghambat drainase.
+                                Waktu terbaik untuk mengganti media adalah setelah masa berbunga selesai, saat tanaman mulai mengeluarkan akar baru.
+                                Pilih media segar dan pastikan pot memiliki lubang drainase yang memadai.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="accordion-item scroll-reveal" style="--reveal-delay: 0.2s;">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Mengapa bunga anggrek saya cepat layu?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            <p>
+                                Bunga anggrek yang cepat layu bisa disebabkan oleh beberapa faktor: stres suhu akibat perubahan drastis antara siang dan malam, penyiraman berlebihan yang menyebabkan akar membusuk,
+                                paparan angin kencang atau hembusan AC langsung, serta kekurangan nutrisi selama masa berbunga.
+                                Pastikan anggrek berada di tempat yang stabil suhunya, terlindung dari angin langsung, dan mendapat pupuk yang cukup sebelum dan selama periode pembungaan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    
+    <footer>
+    <div class="footer-container">
+
+        
+        <div class="footer-col">
+            <h3>SAMOrchid</h3>
+            <p>
+                Inovasi Smart Agriculture Multiproduct Orchid berbasis teknologi IoT. Kami hadir untuk melestarikan anggrek endemik Kalimantan melalui budidaya seedling unggul, suvenir eksklusif, dan praktik pertanian yang berkelanjutan.
+            </p>
+        </div>
+
+        
+       <div class="footer-col">
+            <h3>Navigasi</h3>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="catalog.html">Koleksi Anggrek</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="journal.html">Jurnal Perawatan</a></li>
+                <li><a href="news.html">Berita</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="footer-col">
+            <h3>Kontak</h3>
+            <p>
+                📍 Institut Teknologi Kalimantan (ITK)<br>
+                Jl. Soekarno Hatta Km. 15, Karang Joang<br>
+                Balikpapan, Kalimantan Timur 76127
+            </p>
+            <p style="margin-top: 12px;">
+                📞 +62 813-4141-8504<br>
+                ✉️ kalorchidbalikpapan@gmail.com
+            </p>
+        </div>
+
+        
+       <div class="footer-col">
+    <h3>Ikuti Kami</h3>
+    <p>Ikuti perjalanan kami dalam melestarikan anggrek Nusantara melalui inovasi teknologi cerdas. Mari terhubung dan tumbuh bersama!</p>
+    <div class="social-links">
+        <!-- Tautan Instagram SAMOrchid -->
+        <a href="https://www.instagram.com/samorchid_official?igsh=MW9wNzVmNXBsNmt6ZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+        </a>
+        
+        <!-- Tautan TikTok SAMOrchid -->
+        <a href="https://www.tiktok.com/@samorchid.bibit.anggrek?_r=1&_t=ZS-982fWPN8C19" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.18 8.18 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.18z"/>
+            </svg>
+        </a>
+        
+        <!-- Tautan WhatsApp SAMOrchid (Format 62 untuk kode negara) -->
+        <a href="https://wa.me/6281341418504" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+    </div>
+
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 SAMOrchid. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    
+    <script src="assets/js/samorchid.js"></script>
+
+    
+    
+</body>
+</html>
