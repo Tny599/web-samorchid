@@ -540,7 +540,7 @@ header.scrolled {
 }
 
 .story-section {
-    height: 100vh;
+    min-height: 100vh; /* Ubah dari height menjadi min-height agar bisa melar ke bawah */
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -2016,4 +2016,26 @@ footer {
     transform: translateX(-50%) !important; 
 }
 
+}
+
+/* Pengaturan Khusus Tampilan Layar HP */
+@media (max-width: 768px) {
+    .story-section {
+        background-attachment: scroll !important; /* Mematikan efek fixed agar background tidak error di HP */
+        padding: 80px 5%; /* Menambah jarak atas-bawah agar konten tidak mentok */
+        background-position: right center !important; /* Menggeser gambar sedikit agar fokusnya pas */
+    }
+
+    .story-content {
+        width: 100%; /* Memastikan teks menyesuaikan layar */
+    }
+
+    .story-content h2 {
+        font-size: 28px; /* Sedikit mengecilkan judul */
+    }
+
+    .story-content p {
+        font-size: 15px; /* Sedikit mengecilkan paragraf */
+        line-height: 1.6;
+    }
 }
