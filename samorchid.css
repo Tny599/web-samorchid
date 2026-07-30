@@ -515,7 +515,7 @@ header.scrolled {
     min-height: 100vh;
     width: 100%;
     /* Ini background untuk versi PC (Gelap di kanan) */
-    background: linear-gradient(270deg, rgba(26,38,27,0.85) 35%, rgba(26,38,27,0.2)), url('/assets/images/beranda-jurnal.png') center/cover no-repeat;
+    background: linear-gradient(270deg, rgba(26,38,27,0.85) 35%, rgba(26,38,27,0.2)), url("../images/beranda-jurnal.png") center/cover no-repeat;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -2054,7 +2054,7 @@ footer {
         width: 100%;
         text-align: center; /* Opsional: jika ingin teksnya rata tengah di HP */
     }
-    
+
     .care-content h2 {
         font-size: 28px; /* Mengecilkan judul */
     }
