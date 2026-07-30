@@ -514,8 +514,8 @@ header.scrolled {
 .care-section {
     min-height: 100vh;
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    /* Ini background untuk versi PC (Gelap di kanan) */
+    background: linear-gradient(270deg, rgba(26,38,27,0.85) 35%, rgba(26,38,27,0.2)), url('/assets/images/beranda-jurnal.png') center/cover no-repeat;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -2043,16 +2043,18 @@ footer {
 /* Pengaturan Khusus Tampilan Layar HP */
 @media (max-width: 768px) {
     .care-section {
-        background-attachment: scroll !important; /* Mematikan efek parallax yang bikin error di HP */
-        padding: 80px 5%; /* Menambah ruang atas-bawah agar lega */
-        justify-content: center; /* Menarik blok teks ke tengah di layar HP */
+        /* Gradasi diubah menjadi 90deg (Gelap di kiri) agar teks terbaca jelas di HP */
+        background: linear-gradient(90deg, rgba(26,38,27,0.9) 60%, rgba(26,38,27,0.3)), url('/assets/images/beranda-jurnal.png') center/cover no-repeat;
+        background-attachment: scroll; 
+        padding: 80px 5%; 
+        justify-content: center; 
     }
     
     .care-content {
         width: 100%;
-        text-align: center; /* Membuat teksnya rata tengah agar lebih cantik di HP */
+        text-align: center; /* Opsional: jika ingin teksnya rata tengah di HP */
     }
-
+    
     .care-content h2 {
         font-size: 28px; /* Mengecilkan judul */
     }
