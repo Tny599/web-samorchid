@@ -514,8 +514,8 @@ header.scrolled {
 .care-section {
     min-height: 100vh;
     width: 100%;
-    /* Ini background untuk versi PC (Gelap di kanan) */
-    background: linear-gradient(270deg, rgba(26,38,27,0.85) 35%, rgba(26,38,27,0.2)), url("../images/beranda-jurnal.png") center/cover no-repeat;
+  /* Perhatikan tambahan ../ sebelum tulisan images */
+    background: linear-gradient(270deg, rgba(26,38,27,0.85) 35%, rgba(26,38,27,0.2)), url('../images/beranda-jurnal.png') center/cover no-repeat;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -2044,7 +2044,7 @@ footer {
 @media (max-width: 768px) {
     .care-section {
         /* Gradasi diubah menjadi 90deg (Gelap di kiri) agar teks terbaca jelas di HP */
-        background: linear-gradient(90deg, rgba(26,38,27,0.9) 60%, rgba(26,38,27,0.3)), url('/assets/images/beranda-jurnal.png') center/cover no-repeat;
+      background: linear-gradient(90deg, rgba(26,38,27,0.9) 60%, rgba(26,38,27,0.3)), url('../images/beranda-jurnal.png') center/cover no-repeat;
         background-attachment: scroll; 
         padding: 80px 5%; 
         justify-content: center; 
