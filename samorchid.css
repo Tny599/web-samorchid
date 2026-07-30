@@ -2062,3 +2062,33 @@ footer {
         line-height: 1.6;
     }
 }
+
+/* Pengaturan Khusus Tampilan Layar HP */
+@media (max-width: 768px) {
+    
+    /* 1. Mengubah Wadah Grid menjadi Horizontal Scroll */
+    .categories-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important; /* Memaksa kartu berjejer ke samping, bukan ke bawah */
+        overflow-x: auto !important; /* Mengaktifkan fitur geser (swipe) */
+        scroll-snap-type: x mandatory; /* Menambahkan efek magnet/terkunci saat digeser */
+        gap: 15px; /* Jarak antar kartu */
+        padding-bottom: 20px;
+        
+        /* Menyembunyikan garis scrollbar agar bersih seperti aplikasi */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* Menyembunyikan garis scrollbar khusus untuk Chrome/Safari */
+    .categories-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* 2. Mengatur Ukuran Masing-masing Kartu */
+    .category-card {
+        flex: 0 0 85% !important; /* Lebar kartu 85% agar kartu sebelahnya sedikit terlihat */
+        scroll-snap-align: center; /* Memastikan kartu berhenti tepat di tengah layar */
+    }
+}
